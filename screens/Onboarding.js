@@ -1,7 +1,6 @@
 import React from "react";
 import {
   ImageBackground,
-  Image,
   StyleSheet,
   StatusBar,
   Dimensions
@@ -26,25 +25,12 @@ class Onboarding extends React.Component {
             style={{ height, width, zIndex: 1 }}
           />
         </Block>
-        <Block center>
-          <Image source={Images.LogoOnboarding} style={styles.logo} />
-        </Block>
         <Block flex space="between" style={styles.padded}>
             <Block flex space="around" style={{ zIndex: 2 }}>
               <Block style={styles.title}>
                 <Block>
-                  <Text color="white" size={60}>
-                    Design
-                  </Text>
-                </Block>
-                <Block>
-                  <Text color="white" size={60}>
-                    System
-                  </Text>
-                </Block>
-                <Block style={styles.subTitle}>
-                  <Text color="white" size={16}>
-                    Fully coded React Native components.
+                  <Text color ="#A46262"size={60} center>
+                    Kedelai
                   </Text>
                 </Block>
               </Block>
@@ -52,10 +38,18 @@ class Onboarding extends React.Component {
                 <Button
                   style={styles.button}
                   color={argonTheme.COLORS.SECONDARY}
-                  onPress={() => navigation.navigate("App")}
+                  // onPress={() => navigation.navigate("App")}
                   textStyle={{ color: argonTheme.COLORS.BLACK }}
                 >
-                  Get Started
+                  Analise sua plantação!
+                </Button>
+                <Button
+                  style={styles.button}
+                  color={argonTheme.COLORS.SECONDARY}
+                  // onPress={() => navigation.navigate("App")}
+                  textStyle={{ color: argonTheme.COLORS.BLACK }}
+                >
+                  Mais informações 
                 </Button>
               </Block>
           </Block>
@@ -89,7 +83,7 @@ const styles = StyleSheet.create({
     marginTop: '-50%'
   },
   title: {
-    marginTop:'-5%'
+    marginTop:'-90%',
   },
   subTitle: {
     marginTop: 20
