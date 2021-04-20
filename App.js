@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import * as React from 'react';
 import { Welcome } from './src/pages/Welcome';
-import { Camera } from './src/pages/Camera';
+import { Analysis } from './src/pages/Analysis';
 import { About } from './src/pages/About';
 
 
@@ -21,7 +21,7 @@ export default function App() {
         />
         <Stack.Screen
          name="Analise"
-         component={Camera} />
+         component={Analysis} />
          <Stack.Screen
          name="Sobre Kedelai"
          component={About} />
