@@ -41,7 +41,9 @@ const styles = StyleSheet.create({
     container: {
         flex:1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'space-around',
+        paddingHorizontal: 20,
+        paddingVertical: 200
     },
     button: {
       width: 280,
@@ -49,7 +51,9 @@ const styles = StyleSheet.create({
       backgroundColor: '#615D4F',
       shadowOpacity: 3,
       borderRadius:15,
-      marginBottom:10
+      marginBottom:10,
+      justifyContent: 'center',
+      alignItems: 'center'
     },
     button2: {
         width: 280,
@@ -57,20 +61,18 @@ const styles = StyleSheet.create({
         backgroundColor: '#615D4F',
         shadowOpacity: 3,
         borderRadius:15,
-        marginBottom:100
+        justifyContent: 'center',
+        alignItems: 'center'
       },
     title: {
       flex:1,
       alignItems: 'center',
-      marginTop:300,
       fontWeight:'400',
       fontSize: 84,
       color: '#A46262'
     },
     subTitle: {
-      textAlign: 'center',
       fontWeight:'400',
-      margin:12,
       fontSize: 18,
       color: 'white'
     },

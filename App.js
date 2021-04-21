@@ -14,7 +14,10 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Menu">
+      <Stack.Navigator 
+          initialRouteName="Menu"
+          headerMode="none"
+        >
         <Stack.Screen
           name="Menu"
           component={Welcome}
